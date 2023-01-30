@@ -10,7 +10,7 @@ def generate():
 
     counter = 0
     iterator = 0
-    mnemonic = generate_mnemonic(num_words=24, lang="english")
+    mnemonic = generate_mnemonic(num_words=numWords, lang="english")
     print("MNEMONIC -->", mnemonic)
 
     data = {
@@ -41,7 +41,7 @@ def generate():
 
 
 if __name__ == '__main__':
-
+    numWords = 24
     prefix = "0x62"
     suffix = ""
     max = 1
